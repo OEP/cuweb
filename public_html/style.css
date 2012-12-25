@@ -2,9 +2,14 @@ body {
 font-family: Verdana, sans-serif; 
 line-height: 1.4;
 font-size: 12px;
-background: #f9f5e3 url(images/bg.jpg) repeat-x;
 margin: 0;
 padding: 0;
+background-color: #E1DBAB; 
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E1DBAB), to(#F8F5E4));
+background-image: -webkit-linear-gradient(top, #E1DBAB, #F8F5E4); 
+background-image: -moz-linear-gradient(top, #E1DBAB, #F8F5E4);
+background-image: -ms-linear-gradient(top, #E1DBAB, #F8F5E4);
+background-image: -o-linear-gradient(top, #E1DBAB, #F8F5E4);
 }
 
 a { color: #646F00; text-decoration: none;}
@@ -18,7 +23,8 @@ margin: 20px auto;
 }
 
 #header {
-background: url(images/header.png) no-repeat;
+/*background: url(images/header.png) no-repeat;*/
+background-color: #EFE6C2;
 height: 100px;
 font-family: Georgia, sans-serif; 
 }
@@ -36,7 +42,13 @@ color: #646F00;
 #header h2 { padding: 0 0 0 30px; margin: 0; color: #696969; font-weight: 100; font-size:18px; }
 
 #menu {
-background: url(images/menu.png) no-repeat;
+/*background: url(images/menu.png) no-repeat;*/
+background-color: #748221; 
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#949D31), to(#748221));
+background-image: -webkit-linear-gradient(left, #949D31, #748221); 
+background-image: -moz-linear-gradient(left, #949D31, #748221);
+background-image: -ms-linear-gradient(left, #949D31, #748221);
+background-image: -o-linear-gradient(left, #949D31, #748221);
 height: 40px;
 line-height: 40px;
 }
@@ -65,8 +77,8 @@ background: url(images/menuover.png) repeat-x;
 
 #contentwrap {
 /*background: url(images/content.png) repeat-y;*/
-background-color: #ccc;
-padding: 0 30px;
+background-color: #eee;
+padding-left: 30px;
 }
 
 #content {
@@ -88,7 +100,8 @@ font-weight: 100;
 #sidebar {
 float: right;
 width: 180px;
-margin-top: 10px;
+padding-top: 10px;
+background-color: #888;
 }
 
 #sidebar h3 {
@@ -119,12 +132,10 @@ margin: 0;
 #sidebar ul ul { padding: 2px 0 2px 20px; }
 
 #contentbottom {
-background: url(images/contentbottom.png) no-repeat;
-padding: 10px 0;
 }
 
 #bottomcontent {
-background: url(images/bottomcontent.png) repeat-y;
+background-color: #fff;
 padding: 10px 30px;
 font-size: 18px;
 color: #999;
@@ -133,7 +144,7 @@ font-style: italic;
 }
 
 #bottom {
-background: url(images/bottom.png) no-repeat;
+background-color: #fff;
 padding: 10px 0;
 }
 
