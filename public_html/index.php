@@ -1,4 +1,5 @@
 <?php
+require_once('setup.php');
 
 /*
  *---------------------------------------------------------------
@@ -56,7 +57,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = '/home/pkilgo/apps/CodeIgniter/system';
+	$system_path = '/home/pkilgo/git/cuweb/apps/CodeIgniter/system';
 
 /*
  *---------------------------------------------------------------
@@ -72,7 +73,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = '/home/pkilgo/apps/CodeIgniter/application';
+	$application_folder = '/home/pkilgo/git/cuweb/apps/CodeIgniter/application';
 
 /*
  * --------------------------------------------------------------------

@@ -9,7 +9,7 @@ class Personal extends CI_Controller {
 
 	public function index()
 	{
-    $this->_render_page("Home", "Hello.");
+    $this->_render_page("Home", transform_markdown_file("index.md"));
 	}
 
   private function _render_page($page_name, $content)
