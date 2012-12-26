@@ -2,7 +2,7 @@
 <div id="contentbottom"> 
 
 <div id="bottomcontent">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu odio eu lorem luctus mollis. Aliquam et ante et dui aliquam adipiscing at quis nunc.
+{content}
 </div>
 
 <div id="bottom"> </div>

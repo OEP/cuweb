@@ -20,8 +20,10 @@ class Personal extends CI_Controller {
         "site_name" => "Paul M. Kilgo",));
 		$this->parser->parse('eco-content',
       array("content" => $content));
-		$this->load->view('eco-sidebar');
-		$this->load->view('eco-footer');
+		$this->parser->parse('eco-sidebar',
+      array("content" => transform_markdown_file("sidebar.md")));
+		$this->parser->parse('eco-footer',
+      array("content" => transform_markdown_file("footer.md")));
   }
 }
 
