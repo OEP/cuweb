@@ -1,4 +1,4 @@
-![Me](images/me.jpg)
+![Me](/~pkilgo/images/me.jpg)
 
 Paul Kilgo  
 Ph.D. Student  
