@@ -25,12 +25,12 @@ class Personal extends CI_Controller {
   {
 		$this->parser->parse('eco-header',
       array(
-        "page_name" => $page_name,
-        "site_name" => "Paul M. Kilgo",));
-		$this->parser->parse('eco-content',
-      array("content" => $content));
-		$this->parser->parse('eco-sidebar',
-      array("content" => transform_markdown_file("sidebar.md")));
+        "menu-content" => transform_markdown_file("menu.md"),
+        "page-name" => $page_name,
+        "site-name" => "Paul M. Kilgo",));
+		$this->parser->parse('eco-main',
+      array("primary-content" => $content,
+            "sidebar-content" => transform_markdown_file("sidebar.md")));
 		$this->parser->parse('eco-footer',
       array("content" => transform_markdown_file("footer.md")));
   }

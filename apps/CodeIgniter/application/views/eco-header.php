@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="/~pkilgo/style.css" />
-<title>{site_name} &raquo; {page_name}</title>
+<title>{site-name} &raquo; {page-name}</title>
 </head>
 <body>
 
@@ -12,16 +12,12 @@
 
 
 <div id="header">
-<h1><a href="/~pkilgo/">{site_name}</a></h1>
-<h2>{page_name}</h2>
+<h1><a href="/~pkilgo/">{site-name}</a></h1>
+<h2>{page-name}</h2>
 </div>
 
 <div id="menu">
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Research</a></li>
-<li><a href="#">Teaching</a></li>
-</ul>
+{menu-content}
 </div>
 
 <div id="contentwrap"> 
