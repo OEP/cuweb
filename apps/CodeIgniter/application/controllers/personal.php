@@ -15,9 +15,11 @@ class Personal extends CI_Controller {
 
   public function projects()
   {
-    $project_list = $this->Project_model->get_projects();
+    $project_list = $this->Project_model->get_projects("projects");
     $content = $this->parser->parse('item_list',
-      array("items" => $project_list), true);
+      array(
+        "category" => "projects",
+        "items" => $project_list), true);
     $this->_render_page("Projects", $content);
   }
 
