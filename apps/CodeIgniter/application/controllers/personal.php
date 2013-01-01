@@ -40,7 +40,7 @@ class Personal extends CI_Controller {
     $content = $this->parser->parse('item_list',
       array(
         "items" => $project_list), true);
-    $this->_render_page("Projects", $content);
+    $this->_render_page(ucwords($category), $content);
   }
 
   private function _render_page_detail($category, $slug)
