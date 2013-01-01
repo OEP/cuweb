@@ -19,4 +19,10 @@
     global $markdown_directory;
     return markdown(file_get_contents($markdown_directory . "/" . $filename));
   }
+
+  function read_plain_file($filename)
+  {
+    global $markdown_directory;
+    return file_get_contents("$markdown_directory/$filename");
+  }
 ?>

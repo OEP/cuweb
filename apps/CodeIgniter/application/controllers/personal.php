@@ -45,7 +45,19 @@ class Personal extends CI_Controller {
 
   private function _render_page_detail($category, $slug)
   {
-    echo "Project page for `$slug`.\n";
+    global $pages_directory_name;
+    global $markdown_directory;
+    $relative_path = "$pages_directory_name/$category/$slug";
+    $full_path = "$markdown_directory/$relative_path";
+
+    if(!is_dir($full_path))
+    {
+      show_404();
+    }
+
+    $this->_render_page(
+      read_plain_file("$relative_path/title.md"),
+      transform_markdown_file("$relative_path/content.md"));
   }
 
   private function _render_page($page_name, $content)
