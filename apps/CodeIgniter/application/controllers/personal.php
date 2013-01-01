@@ -13,14 +13,39 @@ class Personal extends CI_Controller {
     $this->_render_page("Home", transform_markdown_file("index.md"));
 	}
 
-  public function projects()
+  public function projects($slug = NULL)
   {
-    $project_list = $this->Project_model->get_projects("projects");
+    $this->_render_projects("projects", $slug);
+  }
+
+  public function _render_projects($category, $slug)
+  {
+    if($slug == NULL)
+    {
+      $this->_render_project_list($category);
+    }
+    else if(!is_string($slug))
+    {
+      show_404();
+    }
+    else
+    {
+      $this->_render_page_detail($category, $slug);
+    }
+  }
+
+  private function _render_project_list($category)
+  {
+    $project_list = $this->Project_model->get_projects($category);
     $content = $this->parser->parse('item_list',
       array(
-        "category" => "projects",
         "items" => $project_list), true);
     $this->_render_page("Projects", $content);
+  }
+
+  private function _render_page_detail($category, $slug)
+  {
+    echo "Project page for `$slug`.\n";
   }
 
   private function _render_page($page_name, $content)
